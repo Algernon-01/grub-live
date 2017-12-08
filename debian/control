@@ -1,0 +1,20 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: grub-live
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 9), genmkfile
+Homepage: https://github.com/Whonix/grub-live
+Vcs-Browser: https://github.com/Whonix/grub-live
+Vcs-Git: https://github.com/Whonix/grub-live.git
+Standards-Version: 3.9.8
+
+Package: grub-live
+Architecture: all
+Depends: live-boot, live-config-systemd, live-boot-initramfs-tools, live-tools, ${misc:Depends}
+Description: Patches for a Whonix live system.
+ .
+ Do not remove.

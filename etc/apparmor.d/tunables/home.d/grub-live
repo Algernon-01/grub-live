@@ -1,0 +1,2 @@
+@{HOMEDIRS}+=/rw/home/
+alias / -> /rw/,
