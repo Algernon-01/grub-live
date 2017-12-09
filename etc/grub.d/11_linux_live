@@ -68,7 +68,7 @@ if [ "x${GRUB_DEVICE_UUID}" = "x" ] || [ "x${GRUB_DISABLE_LINUX_UUID}" = "xtrue"
     || ( test -e "${GRUB_DEVICE}" && uses_abstraction "${GRUB_DEVICE}" lvm ); then
   LINUX_ROOT_DEVICE=${GRUB_DEVICE}
 else
-  LINUX_ROOT_DEVICE=/dev/disk/by-uuid/${GRUB_DEVICE_UUID}
+  LINUX_ROOT_DEVICE=UUID=${GRUB_DEVICE_UUID}
 fi
 
 case x"$GRUB_FS" in
@@ -132,7 +132,7 @@ linux_entry ()
       echo "menuentry '$(echo "$title" | grub_quote)' ${CLASS} \$menuentry_id_option 'gnulinux-$version-$type-$boot_device_id' {" | sed "s/^/$submenu_indentation/"
   else
       echo "menuentry '$(echo "$os" | grub_quote)' ${CLASS} \$menuentry_id_option 'gnulinux-simple-$boot_device_id' {" | sed "s/^/$submenu_indentation/"
-  fi      
+  fi
   if [ "$quick_boot" = 1 ]; then
       echo "	recordfail" | sed "s/^/$submenu_indentation/"
   fi
@@ -207,7 +207,7 @@ case "x$machine" in
 	for i in /boot/vmlinuz-* /vmlinuz-* /boot/kernel-* ; do
 	    if grub_file_is_not_garbage "$i" ; then list="$list $i" ; fi
 	done ;;
-    *) 
+    *)
 	list=
 	for i in /boot/vmlinuz-* /boot/vmlinux-* /vmlinuz-* /vmlinux-* /boot/kernel-* ; do
                   if grub_file_is_not_garbage "$i" ; then list="$list $i" ; fi
@@ -332,21 +332,21 @@ while [ "x$list" != "x" ] ; do
   fi
 
   if [ "x$is_top_level" = xtrue ] && [ "x${GRUB_DISABLE_SUBMENU}" != xy ]; then
-    linux_entry "Live-mode ${OS}" "${version}" simple \
-    "${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT} boot=live union=overlay plainroot"
+    linux_entry "${OS}" "${version}" simple \
+    "${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT}"
 
     submenu_indentation="$grub_tab"
-    
+
     if [ -z "$boot_device_id" ]; then
 	boot_device_id="$(grub_get_device_id "${GRUB_DEVICE}")"
     fi
     # TRANSLATORS: %s is replaced with an OS name
-    echo "submenu '$(gettext_printf "Advanced options for live-mode %s" "${OS}" | grub_quote)' \$menuentry_id_option 'gnulinux-advanced-$boot_device_id' {"
+    echo "submenu '$(gettext_printf "Advanced options for %s" "${OS}" | grub_quote)' \$menuentry_id_option 'gnulinux-advanced-$boot_device_id' {"
     is_top_level=false
   fi
 
-  linux_entry "Live-mode ${OS}" "${version}" advanced \
-              "${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT} boot=live union=overlay plainroot"
+  linux_entry "${OS}" "${version}" advanced \
+              "${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT}"
   for supported_init in ${SUPPORTED_INITS}; do
     init_path="${supported_init#*:}"
     if [ -x "${init_path}" ] && [ "$(readlink -f /sbin/init)" != "${init_path}" ]; then
@@ -355,8 +355,8 @@ while [ "x$list" != "x" ] ; do
     fi
   done
   if [ "x${GRUB_DISABLE_RECOVERY}" != "xtrue" ]; then
-    linux_entry "Live-mode ${OS}" "${version}" recovery \
-                "${GRUB_CMDLINE_LINUX_RECOVERY} ${GRUB_CMDLINE_LINUX} boot=live union=overlay plainroot"
+    linux_entry "${OS}" "${version}" recovery \
+                "${GRUB_CMDLINE_LINUX_RECOVERY} ${GRUB_CMDLINE_LINUX}"
   fi
 
   list=`echo $list | tr ' ' '\n' | fgrep -vx "$linux" | tr '\n' ' '`
