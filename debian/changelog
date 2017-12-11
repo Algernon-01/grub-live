@@ -1,3 +1,9 @@
+grub-live (3:0.2-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 11 Dec 2017 13:44:22 +0000
+
 grub-live (3:0.1-2) unstable; urgency=low
 
   * Initial release.
