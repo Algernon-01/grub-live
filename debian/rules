@@ -8,8 +8,7 @@
 
 %:
 
-	dh $@ --with=config-package
-# 	dh $@ --with systemd
+	dh $@
 
 override_dh_installchangelogs:
 	dh_installchangelogs changelog.upstream upstream
