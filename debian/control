@@ -21,6 +21,6 @@ Description: grub live boot menu entry
  .
  Adds a grub live boot menu entry.
  .
- Existing grub boot entries are stay unmodified.
+ Existing grub boot entries stay unmodified.
  .
  No claims are made with regard to anti forensics.
