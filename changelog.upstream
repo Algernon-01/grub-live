@@ -1,3 +1,37 @@
+commit d746f530b4081c03fb607ff117e96fbe7f25255d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 15 19:43:20 2017 +0000
+
+    typo
+
+commit e108ad3af55fc193dd854f8c948b20630716b37f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 16:41:33 2017 +0000
+
+    fix, export variables
+    
+    this is required if the variables were not already set and exported
+    
+    an empty exported variable by the parent is ignored by bash default
+
+commit ca6dfe7687caf6d0cbfedee57ea96c23725f0974
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:51:15 2017 +0000
+
+    bumped changelog version
+
+commit 4e500f8dbbc6596cb95621d4237f2dd34905f33d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:50:45 2017 +0000
+
+    improve package description to fix lintian warning
+
+commit aadfbab3f0a731bced9ac9217155423af4bdf312
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:46:42 2017 +0000
+
+    remove config-package-dev from debian/rules as we don't need it
+
 commit 41d9a201e718aede34b496131e7f667e104f81b2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Dec 11 12:44:07 2017 +0100
