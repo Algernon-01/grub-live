@@ -1,14 +1,15 @@
-# Whonix-Gateway's Firewall #
+# grub live boot menu entry #
 
-Patches for running a live system.
+Allows booting the system in live mode. Meaning, no persistent modifications
+will be written to the disk. All changes stay in RAM.
 
-Do not remove, metapackages depend on this package.
+Adds a grub live boot menu entry.
+
+Existing grub boot entries stay unmodified.
+
+No claims are made with regard to anti forensics.
 
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
-
-# Manual Page #
-
-See also `man` folder for more information.
 
 # Generic Readme #
 ## Readme Version ##
