@@ -15,6 +15,12 @@ Standards-Version: 3.9.8
 Package: grub-live
 Architecture: all
 Depends: live-boot, live-config-systemd, live-boot-initramfs-tools, live-tools, ${misc:Depends}
-Description: Patches for a Whonix live system.
+Description: grub live boot menu entry
+ Allows booting the system in live mode. Meaning, no persistent modifications
+ will be written to the disk. All changes stay in RAM.
  .
- Do not remove.
+ Adds a grub live boot menu entry.
+ .
+ Existing grub boot entries stay unmodified.
+ .
+ No claims are made with regard to anti forensics.

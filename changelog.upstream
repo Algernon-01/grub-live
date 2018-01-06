@@ -1,5 +1,84 @@
-commit 91172def085f3e503602a9403a1f1adbb3c0db92
-Author: Algernon 
-Date:   Thu May 29 10:58:37 2014 +0000
+commit 11b1e5bbeeeafb80b78024935963db2534932907
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 20:26:28 2017 +0000
 
-    initial import from https://github.com/Whonix/grub-live
+    readme
+
+commit 3daf21b57d0846ba5e92bb89b1ede8acd68159af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 15 20:13:20 2017 +0000
+
+    bumped changelog version
+
+commit d746f530b4081c03fb607ff117e96fbe7f25255d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 15 19:43:20 2017 +0000
+
+    typo
+
+commit e108ad3af55fc193dd854f8c948b20630716b37f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 16:41:33 2017 +0000
+
+    fix, export variables
+    
+    this is required if the variables were not already set and exported
+    
+    an empty exported variable by the parent is ignored by bash default
+
+commit ca6dfe7687caf6d0cbfedee57ea96c23725f0974
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:51:15 2017 +0000
+
+    bumped changelog version
+
+commit 4e500f8dbbc6596cb95621d4237f2dd34905f33d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:50:45 2017 +0000
+
+    improve package description to fix lintian warning
+
+commit aadfbab3f0a731bced9ac9217155423af4bdf312
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 13:46:42 2017 +0000
+
+    remove config-package-dev from debian/rules as we don't need it
+
+commit 41d9a201e718aede34b496131e7f667e104f81b2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 12:44:07 2017 +0100
+
+    add new line at the end
+
+commit 1aeff2c862ad363c2839ca8914a231b180ba8979
+Merge: 733a5cc c8f8a24
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 11 12:39:24 2017 +0100
+
+    Merge remote-tracking branch 'algernon/master'
+
+commit c8f8a24dbac305cdbbff0d2d53d14b699cc4a2b4
+Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sun Dec 10 20:46:01 2017 +0000
+
+    Reduced file size.
+
+commit 733a5cc3512d6061542f28343cb431c508ea2cda
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 9 13:54:04 2017 +0100
+
+    readd modifications by @Algernon-01
+
+commit ad61c58f77f8cf4e84bba104d5009229b148ffb6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 9 13:51:34 2017 +0100
+
+    revert to original on which this file is based on /etc/grub.d/10_linux
+    
+    so we can revert this change to see the diff
+
+commit 2bd6a7fd5a1003e2c872cf3c40975eb724f43ab8
+Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Date:   Fri Dec 8 23:17:57 2017 +0000
+
+    Enables new grub menu entry for Whonix overlayfs live system.
