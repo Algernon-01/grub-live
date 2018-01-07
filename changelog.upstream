@@ -1,3 +1,31 @@
+commit 3e685207a6fda847c13f9488fe8705a14838a85d
+Merge: 44dd638 243e1ef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 7 11:52:48 2018 +0000
+
+    Merge remote-tracking branch 'algernon/master'
+
+commit 243e1ef6adb9073448b5a674e2a49b5a9c2e10c7
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sat Jan 6 18:29:32 2018 +0000
+
+    Added ip=frommedia to the kernel commandline. Otherwise the network interfaces won't be configured in live mode.
+
+commit 6840e7c8306f41be1a66355ce8d0ca4e2200a9cf
+Merge: c8f8a24 44dd638
+Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sat Jan 6 18:21:04 2018 +0000
+
+    Merge pull request #1 from adrelanos/master
+    
+    misc
+
+commit 44dd63857b87713d991d735c05bf71971a24c7b7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 20:32:10 2017 +0000
+
+    bumped changelog version
+
 commit 11b1e5bbeeeafb80b78024935963db2534932907
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Dec 21 20:26:28 2017 +0000
