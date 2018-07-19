@@ -1,3 +1,31 @@
+commit c974fe4291149d27199ca88ec58c46e4c99a2687
+Merge: 77858c4 dcde404
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 19 14:27:54 2018 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit dcde404f9ff2886ce82e7a25302b03b6c5ec9cb0
+Merge: 77858c4 8de50a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 19 22:25:21 2018 +0800
+
+    Merge pull request #1 from Algernon-01/master
+    
+    fixed apparmor path
+
+commit 8de50a97dcb145b6c6aac49ed3950899d4f51c74
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Tue Jul 17 21:04:29 2018 +0000
+
+    fixed apparmor path
+
+commit 77858c43e7176ec7336b1ae364813799a0e7fcfa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 1 15:06:08 2018 +0000
+
+    bumped changelog version
+
 commit ba5127e9436d2283bbf39dc64a14629238714ad4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 29 15:50:29 2018 +0000
