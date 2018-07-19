@@ -1,2 +1,4 @@
 @{HOMEDIRS}+=/rw/home/
 alias / -> /rw/,
+alias /var/lib/ -> /rw/var/lib/,
+alias /var/lib/tor/ -> /rw/var/lib/tor/,
