@@ -1,3 +1,15 @@
+commit 6807d95d003b1e933a81eb98e6dd0ead7426efeb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 21 05:18:31 2018 +0800
+
+    readme
+
+commit 9fb3992e7c3ef88a1d2782681cca386e3b25b3d4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 15:56:40 2018 +0000
+
+    bumped changelog version
+
 commit 5b7e63e3f2780e9e05db62a3977944be8bf07821
 Merge: 2320a21 aec7045
 Author: Patrick Schleizer <adrelanos@riseup.net>
